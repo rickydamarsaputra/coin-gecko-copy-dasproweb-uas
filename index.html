@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <title>CoinGecko: Cryptocurrency Prices and Market Capitalization</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo.webp" alt="logo" width="140" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header"
+        aria-controls="header" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="header">
+        <div class="navbar-nav text-capitalize">
+          <a class="nav-link" href="#">home</a>
+          <a class="nav-link" href="#">coins</a>
+          <a class="nav-link" href="#">exchanges</a>
+          <a class="nav-link" href="#">defi</a>
+          <a class="nav-link" href="#">NFT</a>
+          <a class="nav-link" href="#">publications</a>
+          <a class="nav-link" href="#">publications</a>
+          <a class="nav-link" href="#">resources</a>
+          <a class="nav-link" href="#">products</a>
+          <a class="nav-link" href="#">community</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="border-bottom">
+    <div class="container my-2">
+      <small><span class="fw-bold">Coins</span>: <a href="#" class="text-decoration-none">8370</a></small>
+      <small class="mx-2"><span class="fw-bold">Exchanges</span>: <a href="#"
+          class="text-decoration-none">479</a></small>
+      <small>
+        <span class="fw-bold">Market Cap</span>:
+        <a href="#" class="text-decoration-none">$1,489,018,431,815
+          <span class="text-danger">-0.5% <i class="fas fa-level-down-alt"></i></span>
+        </a>
+      </small>
+      <small class="mx-lg-2"><span class="fw-bold">24h Vol</span>: <a href="#"
+          class="text-decoration-none">$98,036,299,642</a></small>
+      <small><span class="fw-bold">Dominance</span>: BTC 43.0% ETH 18.0%</small>
+      <small class="mx-2"><span class="fw-bold"><i class="fas fa-gas-pump"></i> ETH Gas</span>: 47 gwei</small>
+    </div>
+  </div>
+  <!-- header -->
+
+  <!-- info -->
+  <div class="container mt-3">
+    <div class="d-lg-flex align-items-center">
+      <h1 class="fs-4 fw-bold me-2">Cryptocurrency Prices by Market Cap</h1>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="show-status" checked>
+        <label class="form-check-label fw-bold" for="show-status">Show Stats</label>
+      </div>
+    </div>
+    <small>
+      The global crypto market cap is $1.49 Trillion, a
+      <span class="text-danger">-0.5% <i class="fas fa-level-down-alt"></i></span> increase over the last day.
+      <a href="#" class="text-muted">Read More</a>
+    </small>
+    <div class="row mt-4">
+      <div class="col-lg mb-2 mb-lg-0">
+        <div class="border-start border-5 border-danger rounded shadow-sm px-4 py-1">
+          <div class="d-flex align-items-center">
+            <h1 class="fs-6 text-muted">$1,489,018,431,815</h1>
+            <span class="text-danger ms-2">-0.5%<i class="fas fa-level-down-alt"></i></span>
+          </div>
+          <small class="text-muted">Market Capitalization</small>
+        </div>
+      </div>
+      <div class="col-lg mb-2 mb-lg-0">
+        <div class="border-start border-5 border-success rounded shadow-sm px-4 py-1">
+          <div class="d-flex align-items-center">
+            <h1 class="fs-6 text-muted">$98,036,299,642</h1>
+            <span class="text-success ms-2">18.8%<i class="fas fa-level-up-alt"></i></span>
+          </div>
+          <small class="text-muted">24h Trading Volume</small>
+        </div>
+      </div>
+      <div class="col-lg mb-2 mb-lg-0">
+        <div class="border-start border-5 border-secondary rounded shadow-sm px-4 py-1">
+          <div class="d-flex align-items-center">
+            <h1 class="fs-6 text-muted">43.00%</h1>
+          </div>
+          <small class="text-muted">Bitcoin Market Cap Dominance</small>
+        </div>
+      </div>
+      <div class="col-lg mb-2 mb-lg-0">
+        <div class="border-start border-5 border-secondary rounded shadow-sm px-4 py-1">
+          <div class="d-flex align-items-center">
+            <h1 class="fs-6 text-muted">8370</h1>
+          </div>
+          <small class="text-muted"># of Coins</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- info -->
+
+  <!-- table coin -->
+  <div class="container mt-4 overflow-scroll">
+    <div class="d-flex justify-content-between mb-4">
+      <div>
+        <button class="btn border fw-bold text-muted rounded-pill px-3">USD</button>
+        <button class="btn border fw-bold text-muted rounded-pill px-3 mx-2">All Categories</button>
+        <button class="btn border fw-bold text-muted rounded-pill px-3">Filter</button>
+      </div>
+      <!-- <div>
+        <button class="btn border text-muted rounded-circle"><i class="fas fa-chevron-left"></i></button>
+        <button class="btn border text-muted rounded-circle"><i class="fas fa-chevron-right"></i></button>
+      </div> -->
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Coin</th>
+          <th scope="col">Price</th>
+          <th scope="col">Percentage</th>
+          <th scope="col">Mkt Cap</th>
+        </tr>
+      </thead>
+      <tbody class="coin-list"></tbody>
+    </table>
+  </div>
+  <!-- table coin -->
+
+  <!-- disclaimer -->
+  <div class="mt-5 py-4" style="background-color: #3f3f3f;">
+    <div class="container">
+      <small class="text-white">
+        <span class="text-danger">
+          <i class="fas fa-exclamation-triangle"></i> <a href="#" class="text-danger">IMPORTANT DISCLAIMER:</a>
+        </span>
+        All content provided herein our website, hyperlinked sites, associated applications, forums, blogs, social
+        media accounts and other platforms (“Site”) is for your general information only, procured from third party
+        sources. We make no warranties of any kind in relation to our content, including but not limited to accuracy and
+        updatedness. No part of the content that we provide constitutes financial advice, legal advice or any other form
+        of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your
+        own risk and discretion. You should conduct your own research, review, analyse and verify our content before
+        relying on them. Trading is a highly risky activity that can lead to major losses, please therefore consult your
+        financial advisor before making any decision. No content on our Site is meant to be a solicitation or offer.
+      </small>
+    </div>
+  </div>
+  <!-- disclaimer -->
+
+  <!-- footer -->
+  <footer class="py-4" style="background-color: #303030;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="./assets/images/logo-white.webp" alt="logo">
+          <small class="text-white d-block mt-2">
+            CoinGecko provides a fundamental analysis of the crypto market. In addition to tracking price, volume
+            and market capitalization, CoinGecko tracks community growth, open-source code development, major events and
+            on-chain metrics.
+          </small>
+        </div>
+        <div class="col">
+          <span class="text-white fw-bold">CoinGecko</span>
+          <ul class="list-unstyled mt-2">
+            <li><a href="#" class="text-white text-decoration-none"><small>About Us</small></a></li>
+            <li class="my-2"><a href="#" class="text-white text-decoration-none"><small>Methodology</small></a></li>
+            <li><a href="#" class="text-white text-decoration-none"><small>Careers</small></a></li>
+            <li class="my-2"><a href="#" class="text-white text-decoration-none"><small>Branding Guide</small></a></li>
+            <li><a href="#" class="text-white text-decoration-none"><small>Request Form</small></a></li>
+            <li class="mt-2"><a href="#" class="text-white text-decoration-none"><small>Advertising</small></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <span class="text-white fw-bold">Donations</span>
+          <ul class="list-unstyled mt-2">
+            <li><a href="#" class="text-white text-decoration-none"><small>Bitcoin</small></a></li>
+            <li class="mt-2"><a href="#" class="text-white text-decoration-none"><small>Ethereum</small></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <span class="text-white fw-bold">Interested to stay up-to-date with cryptocurrencies?</span>
+          <small class="text-white d-block mt-2">
+            Get the latest crypto news, updates, and reports by subscribing to our free
+            newsletter.
+          </small>
+          <div class="my-3">
+            <label for="subscribe" class="form-label text-white">Your email address</label>
+            <input type="email" class="form-control" id="subscribe">
+          </div>
+          <button class="btn btn-sm text-white" style="background-color: #8dc647;">Subscribe</button>
+        </div>
+      </div>
+      <p class="text-white text-center mt-4"><small>© 2021 CoinGecko. All Rights Reserved.</small></p>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- my script -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
